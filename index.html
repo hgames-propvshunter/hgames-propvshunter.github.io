@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hi Friends — Hide and Seek</title>
+  <title>HIDE Friends</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="512i.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
@@ -50,6 +52,7 @@
       justify-content: center;
       gap: 1.2rem;
       flex-wrap: wrap;
+      margin-top: 1rem;
     }
 
     .btn {
@@ -72,10 +75,12 @@
     .btn-discord { background: #5865F2; }
     .btn-telegram { background: #0088cc; }
     .btn-email { background: #d44638; }
+    .btn-google { background: #4285F4; }
+    .btn-appstore { background: #000000; }
 
     .carousel {
       max-width: 800px;
-      margin: 3rem auto;
+      margin: 2rem auto;
       position: relative;
       overflow: hidden;
       border-radius: 16px;
@@ -116,6 +121,22 @@
       background: white;
     }
 
+    .description {
+      text-align: center;
+      max-width: 800px;
+      margin: 2rem auto;
+      font-size: 1.3rem;
+      color: #4a5568;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -128,9 +149,9 @@
 
   <header>
     <div class="logo">
-      <i class="fas fa-user-secret"></i>
+      <img src="512i.png" alt="HIDE Friends" style="width: 60px; height: 60px; object-fit: contain;">
     </div>
-    <h1>Hi Friends — Hide and Seek</h1>
+    <h1>HIDE Friends</h1>
     <div class="social-links">
       <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="btn btn-discord">
         <i class="fab fa-discord"></i> Discord
@@ -146,20 +167,38 @@
 
   <div class="carousel">
     <div class="slides" id="slides">
-      <!-- Замените URL на реальные скриншоты вашей игры -->
-      <div class="slide" style="background-image: url('https://via.placeholder.com/800x450/4a6cf7/ffffff?text=Скриншот+1')"></div>
-      <div class="slide" style="background-image: url('https://via.placeholder.com/800x450/ff6b6b/ffffff?text=Скриншот+2')"></div>
-      <div class="slide" style="background-image: url('https://via.placeholder.com/800x450/4ecdc4/ffffff?text=Скриншот+3')"></div>
+      <div class="slide" style="background-image: url('1.png')"></div>
+      <div class="slide" style="background-image: url('2.png')"></div>
+      <div class="slide" style="background-image: url('3.png')"></div>
+      <div class="slide" style="background-image: url('4.png')"></div>
+      <div class="slide" style="background-image: url('5.png')"></div>
+      <div class="slide" style="background-image: url('6.png')"></div>
     </div>
     <div class="controls" id="dots">
       <span class="dot active" data-index="0"></span>
       <span class="dot" data-index="1"></span>
       <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+      <span class="dot" data-index="5"></span>
     </div>
   </div>
 
+  <div class="description">
+    Весёлые пиксельные прятки онлайн с друзьями!
+  </div>
+
+  <div class="store-buttons">
+    <a href="https://play.google.com/store/apps/details?id=com.hgames.propvshunterandroid" target="_blank" class="btn btn-google">
+      <i class="fab fa-google-play"></i> Google Play
+    </a>
+    <a href="https://apps.apple.com/us/app/h-i-d-e-hide-or-seek-online/id1436151665" target="_blank" class="btn btn-appstore">
+      <i class="fab fa-app-store"></i> App Store
+    </a>
+  </div>
+
   <footer>
-    &copy; 2025 Hi Friends. Все права защищены.
+    &copy; 2025 HIDE Friends. Все права защищены.
   </footer>
 
   <script>
