@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -31,14 +31,20 @@
     .logo {
       width: 80px;
       height: 80px;
-      background: #4a6cf7;
       border-radius: 20px;
-      display: inline-flex;
+      overflow: hidden;
+      display: flex;
       align-items: center;
       justify-content: center;
+      background: #4a6cf7;
       margin-bottom: 1rem;
-      color: white;
-      font-size: 2.2rem;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     h1 {
@@ -149,7 +155,7 @@
 
   <header>
     <div class="logo">
-      <img src="512i.png" alt="HIDE Friends" style="width: 60px; height: 60px; object-fit: contain;">
+      <img src="512i.png" alt="HIDE Friends">
     </div>
     <h1>HIDE Friends</h1>
     <div class="social-links">
@@ -185,7 +191,7 @@
   </div>
 
   <div class="description">
-    Весёлые пиксельные прятки онлайн с друзьями!
+    Fun pixel hide-and-seek online with friends!
   </div>
 
   <div class="store-buttons">
@@ -198,7 +204,7 @@
   </div>
 
   <footer>
-    &copy; 2025 HIDE Friends. Все права защищены.
+    &copy; 2025 HIDE Friends. All rights reserved.
   </footer>
 
   <script>
@@ -221,7 +227,7 @@
       dot.addEventListener('click', () => showSlide(parseInt(dot.dataset.index)));
     });
 
-    // Автопрокрутка каждые 5 секунд
+    // Auto-rotate every 5 seconds
     setInterval(() => showSlide(currentIndex + 1), 5000);
   </script>
 
